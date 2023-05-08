@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="/js/estore.shopping-cart.js"></script>
+</head>
+
+<main class="row justify-content-center">
+    <form action="/spring/login" method="post"  class="col-6 was-validated">
+    	<div class="card shadow rounded">
+    		<div class="card-header bg-primary text-white">
+    			<b>ĐĂNG NHẬP</b>
+    			<i class="float-end text-white" th:text="${message}"></i>
+    		</div>
+    		<div class="card-body">
+    			<div class="mb-3 form-floating">
+		            <input name="username" class="form-control" required id="un" placeholder="un">
+		            <label for="un">Tên đăng nhập?</label>
+		        </div>
+		        <div class="mb-3 form-floating">
+		            <input name="password" class="form-control" required id="pw" placeholder="pw">
+		            <label for="pw">Mật khẩu?</label>
+		        </div>
+		        <div class="form-check form-switch">
+					<input name="remember-me" class="form-check-input" type="checkbox" id="rm">
+					<label class="form-check-label" for="rm">Ghi nhớ tài khoản?</label>
+				</div>
+    		</div>
+    		<div class="card-footer text-end">
+    			<button class="btn btn-primary">Đăng nhập</button>
+    		</div>
+    	</div>
+    </form>
+</main>
+
+</html>

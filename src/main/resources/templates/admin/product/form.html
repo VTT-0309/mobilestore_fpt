@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <!-- <link rel="stylesheet" href="../css/admin_product_add.css" /> -->
+    <link th:href="@{/css/admin_product_add.css}" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Products</h1>
+        <p>Add products</p>
+        <button> <a href="/spring/logout">logout</a></button>
+    </div>
+    <h3>Add Product</h3>
+    <div class="addProduct">
+        <div class="item">
+            <form method="post" enctype="multipart/form-data">
+                <div class="itemProduct">
+                    <label for="productName">Product Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="itemProduct">
+                    <label for="unitPrice">Unit Price:</label>
+                    <input type="number" name="unitPrice" id="unitPrice">
+                </div>
+                <div class="itemProduct">
+                    <label for="unitsInStock">Units In Stock:</label>
+                    <input type="number" name="unitsInStock" id="unitsInStock">
+                </div>
+                <div class="itemProduct">
+                    <label for="description">Description:</label>
+                    <textarea name="description" id="description"></textarea>
+                </div>
+                <div class="itemProduct">
+                    <label for="manufacturer">Manufacturer:</label>
+                    <input type="text" name="manufacturer" id="manufacturer">
+                </div>
+                <div class="itemProduct">
+                    <label for="category">Category:</label>
+                    <select type="text" name="category" id="category">
+                        <th:block th:each="c : ${categories}">
+                            <option th:value="${c.id}" th:text="${c.name}"></option>
+                        </th:block>
+                    </select>
+                </div>
+        </div>
+        <div class="item__Condition">
+            <label for="conditions">Condition:</label>
+            <div class="item__Condition-check">
+                <select type="text" name="condition" id="condition">
+                    <th:block th:each="cd : ${conditions}">
+                        <option th:value="${cd.id}" th:text="${cd.name}"></option>
+                    </th:block>
+                </select>
+            </div>
+        </div>
+        <div class="item__link">
+            <label>Product Image File:</label>
+            <input type="file" name="image_file" id="image_file">
+        </div>
+        <div class="button-addProduct">
+            <button th:formaction="@{|/addProduct|}">Add Product</button>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>

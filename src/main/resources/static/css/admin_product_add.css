@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+  }
+.header{
+    width: 50%;
+    height: 150px;
+    background-color: #f6f7f7;
+    text-align: center;
+    margin: 0 auto;
+}
+.header h1{
+    font-size: 35px;
+    padding-top: 10px;
+}
+.header button{
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    cursor: pointer;
+    border: 1px solid ;
+    border: none;
+}
+.header button:hover{
+    background-color: white;
+}
+h3{
+    width: 50%;
+    padding-top: 20px;
+    font-size: 30px;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.addProduct{
+    margin-left: 550px;
+}
+.itemProduct{
+    display: flex;
+    height: 55px;
+}
+.itemProduct label{
+    width: 110px;
+    font-weight: 300;
+}
+.itemProduct input{
+    width: 200px;
+    height: 30px;
+    margin-left: 40px;
+}
+.itemProduct textarea{
+    width: 200px;
+    height: 30px;
+    margin-left: 40px;
+}
+.itemProduct select{
+    width: 200px;
+    height: 30px;
+    margin-left: 40px;
+}
+.item__Condition{
+    /* display: flex; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.item__Condition-check{
+    position: absolute;
+    margin-left: 150px;
+}
+.item__link{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.item__link label{
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.item__link input{
+    margin-left: 15px;
+    color: gray;
+    margin-top: 10px;
+}
+.button-addProduct button{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 200;
+    background-color: #1E90FF;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-left: 155px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.button-addProduct button:hover{
+    background-color: white;
+    color: black;
+    border: none;
+}

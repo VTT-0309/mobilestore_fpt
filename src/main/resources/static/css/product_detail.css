@@ -1,0 +1,134 @@
+.header{
+    height: 140px;
+    background-color: #f6f7f7;
+    text-align: center;
+    margin: 0 auto;
+}
+.header h1{
+    font-size: 100px;
+    padding-top: 10px;
+}
+.body{
+    margin-top: 20px;
+    display: flex;
+}
+.body .body-img{
+    width: 850px;
+    height: 350px;
+}
+.body .body-img img{
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 80px;
+}
+/* .body .body-detail{
+    width: 10px;
+    height: 10px;
+    object-fit: cover;
+}
+.body .body-detail p{
+    font-size: 35px;
+    font-weight: 800;
+}
+.body .body-detail__des{
+    font-size: 18px;
+    margin-top: -25px;
+} */
+.item{
+    display: flex;
+}
+.item .item-code{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+.item .item-code-number{
+    width: 130px;
+    height: 20px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+.manufacturer{
+    display: flex;
+    margin-top: -25px;
+}
+.manufacturer .manufacturer-des{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+.manufacturer .manufacturer-title{
+    font-size: 18px;
+    font-weight: 100;
+
+}
+.category{
+    display: flex;
+    margin-top: -25px;
+}
+.category .category-des{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+.category .category-title{
+    font-size: 18px;
+    font-weight: 100;
+    color: blue;
+
+}
+.availble{
+    display: flex;
+    margin-top: -25px;
+}
+.availble .availble-des{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+.availble .availble-number{
+    font-size: 18px;
+    font-weight: 100;
+}
+.body-detail .price{
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 120;
+}
+.button{
+    display: flex;
+}
+.button-back{
+    width: 50px;
+    height: 30px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.button-back:hover{
+    background-color: white;
+    color: black;
+}
+.button-Order{
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.button-Order:hover{
+    background-color: white;
+    color: black;
+}
